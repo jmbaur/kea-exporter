@@ -558,6 +558,10 @@ class KeaExporter:
         ]
         # Ignore list for subnet level metrics
         self.metric_dhcp6_subnet_ignore = [
+            'v6-allocation-fail-no-pools',
+            'v6-allocation-fail-shared-network',
+            'v6-allocation-fail-classes',
+            'v6-allocation-fail-subnet',
             'cumulative-assigned-addresses',
             'cumulative-assigned-nas',
             'cumulative-assigned-pds',
